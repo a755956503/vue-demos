@@ -5,8 +5,12 @@
   </div>
 </template>
 <script setup lang="ts">
-import {  reactive } from 'vue';
+import {  reactive, onMounted, defineProps } from 'vue';
 const count = reactive({ count: 1 });
+
+onMounted(() => {
+  console.log('onMounted');
+})
 
 function update() {
   count.count++;

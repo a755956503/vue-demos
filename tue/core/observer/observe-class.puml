@@ -1,0 +1,14 @@
+@startuml observe
+
+class ObserveFunc {
+  + observe(value)
+  + defineReactive(obj, key, value)
+}
+
+class Observe {
+  walk
+}
+' class Dep {
+'   addDep
+' }
+@enduml
